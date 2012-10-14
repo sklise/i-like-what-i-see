@@ -12,7 +12,6 @@ window.onscroll = function() {
     if(!include(clicked, i)) {
       clicked.push(i);
       likes[i].style.color = 'red';
-      console.log(i);
       fireEvent(likes[i], 'click');
     }
   }
@@ -44,7 +43,9 @@ function fireEvent(element,event) {
    if (document.createEvent) {
        // dispatch for firefox + others
        var evt = document.createEvent("HTMLEvents");
+
        evt.initEvent(event, true, true ); // event type,bubbling,cancelable
+       evt.preventDefault();
        return !element.dispatchEvent(evt);
    } else {
        // dispatch for IE
