@@ -40,16 +40,9 @@ function findPos(obj) {
 // http://jehiah.cz/a/firing-javascript-events-properly via
 // http://stackoverflow.com/questions/143747/is-it-possible-to-trigger-a-links-or-any-elements-click-event-through-javasc
 function fireEvent(element,event) {
-   if (document.createEvent) {
-       // dispatch for firefox + others
-       var evt = document.createEvent("HTMLEvents");
+   var evt = document.createEvent("HTMLEvents");
 
-       evt.initEvent(event, true, true ); // event type,bubbling,cancelable
-       evt.preventDefault();
-       return !element.dispatchEvent(evt);
-   } else {
-       // dispatch for IE
-       var evt = document.createEventObject();
-       return element.fireEvent('on'+event,evt)
-   }
+   evt.initEvent(event, true, true ); // event type,bubbling,cancelable
+   evt.preventDefault();
+   return !element.dispatchEvent(evt);
 }
