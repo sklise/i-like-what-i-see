@@ -1,21 +1,21 @@
 likes = document.getElementsByClassName('UFILikeLink');
+likes = document.getElementsByTagName('a');
 
 clicked = [];
 
 window.onscroll = function() {
 
   for (i = 0; i < likes.length; i++) {
-  // rate limiting
-  // fireEvent(likes[i], 'click');
-  // console.log(likes[i].innerHTML, findPos(likes[i]) )
-  if(findPos(likes[i])[1] > document.body.scrollTop && findPos(likes[i])[1] <= document.body.scrollTop+window.innerHeight - 100) {
-    if(!include(clicked, i)) {
-      clicked.push(i);
-      likes[i].style.color = 'red';
-      fireEvent(likes[i], 'click');
+    if(likes[i].innerText === 'Like'){
+      if(findPos(likes[i])[1] > document.body.scrollTop && findPos(likes[i])[1] <= document.body.scrollTop+window.innerHeight - 100) {
+        if(!include(clicked, i)) {
+          clicked.push(i);
+          likes[i].style.color = 'red';
+          fireEvent(likes[i], 'click');
+        }
+      }
     }
   }
-}
 }
 
 // http://stackoverflow.com/questions/143847/best-way-to-find-an-item-in-a-javascript-array
