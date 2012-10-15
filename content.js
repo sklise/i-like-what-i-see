@@ -6,7 +6,7 @@ clicked = [];
 window.onscroll = function() {
 
   for (i = 0; i < likes.length; i++) {
-    if(likes[i].innerText === 'Like'){
+    if(likes[i].innerText === 'Like' || likes[i].innerText === 'Like This Page'){
       if(findPos(likes[i])[1] > document.body.scrollTop && findPos(likes[i])[1] <= document.body.scrollTop+window.innerHeight - 100) {
         if(!include(clicked, i)) {
           clicked.push(i);
