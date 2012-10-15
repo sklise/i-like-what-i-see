@@ -1,8 +1,7 @@
 # I Like What I See
 
 _I Like What I See_ is a Chrome extension to automatically click all "Like"
-links on Facebook. Get it from the [downloads](https://github.com/stevenklise/i-like-what-i-see/downloads)
-page and install it on Chrome. When you visit Facebook, click the thumbs up
+links on Facebook. When you visit Facebook, click the thumbs up
 in the extension bar and start scrolling and liking. Liking and scrolling.
 Every instance of the word "Like" will be clicked. Don't worry, Facebook is
 a fun place full of all of the stuff you like.
@@ -11,6 +10,17 @@ If you scroll too fast Facebook might find it impossible that you like all
 of the things you do as fast as you do (seeing is believing/liking). You
 may find yourself being blocked from expressing your true feelings for your
 friends status updates.
+
+## Installation
+
+To install this extension grab the zip from the [downloads](https://github.com/stevenklise/i-like-what-i-see/downloads)
+page. Unzip the zip and then in Chrome click the menu icon and select 
+**TOOLS > EXTENSIONS**. Check the box marked "Developer Mode" and click the
+"Load unpacked extension" button and select the folder you just unzipped. 
+An icon should appear in the Chrome Toolbar.
+
+This extension probably violates some terms of service with Facebook and so
+I will not be submitting it to the Chrome Web Store.
 
 ## License
 MIT:
