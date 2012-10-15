@@ -48,8 +48,6 @@ function fireEvent(element,event) {
        evt.preventDefault();
        return !element.dispatchEvent(evt);
    } else {
-       // dispatch for IE
-       var evt = document.createEventObject();
-       return element.fireEvent('on'+event,evt)
+       alert("Sorry, we do not want to propagate the opinions of IE users.");
    }
 }
