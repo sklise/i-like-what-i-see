@@ -1,7 +1,6 @@
-likes = document.getElementsByClassName('UFILikeLink');
-likes = document.getElementsByTagName('a');
+var likes = document.getElementsByTagName('a');
 
-clicked = [];
+var clicked = [];
 
 window.onscroll = function() {
 
