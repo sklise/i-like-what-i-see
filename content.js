@@ -1,3 +1,4 @@
+console.log('wtf');
 var clicked = [];
 
 window.onscroll = function() {
@@ -17,12 +18,12 @@ window.onscroll = function() {
   }
 }
 
-// http://stackoverflow.com/questions/143847/best-way-to-find-an-item-in-a-javascript-array
+// // http://stackoverflow.com/questions/143847/best-way-to-find-an-item-in-a-javascript-array
 function include(arr,obj) {
   return (arr.indexOf(obj) != -1);
 }
 
-// http://www.quirksmode.org/js/findpos.html
+// // http://www.quirksmode.org/js/findpos.html
 function findPos(obj) {
   var curleft = curtop = 0;
 
@@ -36,8 +37,8 @@ function findPos(obj) {
   return [curleft, curtop];
 }
 
-// http://jehiah.cz/a/firing-javascript-events-properly via
-// http://stackoverflow.com/questions/143747/is-it-possible-to-trigger-a-links-or-any-elements-click-event-through-javasc
+// // http://jehiah.cz/a/firing-javascript-events-properly via
+// // http://stackoverflow.com/questions/143747/is-it-possible-to-trigger-a-links-or-any-elements-click-event-through-javasc
 function fireEvent(element,event) {
    var evt = document.createEvent("HTMLEvents");
 
