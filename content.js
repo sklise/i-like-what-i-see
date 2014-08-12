@@ -1,17 +1,17 @@
-var likes = document.getElementsByTagName('a');
-
 var clicked = [];
 
 window.onscroll = function() {
+  var all_likes = document.getElementsByTagName('a');
+  var likes = Array.prototype.filter.call(all_likes, function (like) {
+    return /^Like( This Page)?$/.test(like.innerText) && !/accessible_elem/.test(like.className)
+  })
 
   for (i = 0; i < likes.length; i++) {
-    if(likes[i].innerText === 'Like' || likes[i].innerText === 'Like This Page'){
-      if(findPos(likes[i])[1] > document.body.scrollTop && findPos(likes[i])[1] <= document.body.scrollTop+window.innerHeight - 100) {
-        if(!include(clicked, i)) {
-          clicked.push(i);
-          likes[i].style.color = 'red';
-          fireEvent(likes[i], 'click');
-        }
+    if(findPos(likes[i])[1] > document.body.scrollTop && findPos(likes[i])[1] <= document.body.scrollTop+window.innerHeight - 100) {
+      if(!include(clicked, likes[i])) {
+        clicked.push(likes[i]);
+        likes[i].style.color = 'red';
+        fireEvent(likes[i], 'click');
       }
     }
   }
