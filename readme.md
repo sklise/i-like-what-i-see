@@ -13,11 +13,12 @@ friends status updates.
 
 ## Installation
 
-To install this extension grab the zip from the [downloads](https://github.com/stevenklise/i-like-what-i-see/downloads)
-page. Unzip the zip and then in Chrome click the menu icon and select 
-**TOOLS > EXTENSIONS**. Check the box marked "Developer Mode" and click the
-"Load unpacked extension" button and select the folder you just unzipped. 
-An icon should appear in the Chrome Toolbar.
+1. To install this extension grab the zip from the <a href="https://github.com/sklise/i-like-what-i-see/downloads">downloads</a>
+page. Unzip the zip.
+2. Open up the Extensions page in Chrome. chrome://extensions/
+3. Check the box marked "Developer Mode"
+4. Click the "Load unpacked extension" button and select the folder you just unzipped.
+5. An icon should appear in the Chrome Toolbar.
 
 This extension probably violates some terms of service with Facebook and so
 I will not be submitting it to the Chrome Web Store.
@@ -25,7 +26,7 @@ I will not be submitting it to the Chrome Web Store.
 ## License
 MIT:
 
-Copyright (C) 2012 Steve Klise
+Copyright (C) 2012-2014 Steve Klise
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
