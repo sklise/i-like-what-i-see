@@ -13,15 +13,14 @@ friends status updates.
 
 ## Installation
 
-1. To install this extension grab the zip from the <a href="https://github.com/sklise/i-like-what-i-see/downloads">downloads</a>
-page. Unzip the zip.
+This extension probably violates some terms of service with Facebook and so
+I will not be submitting it to the Chrome Web Store.
+
+1. Download the zip of this extension: https://github.com/sklise/i-like-what-i-see/releases
 2. Open up the Extensions page in Chrome. chrome://extensions/
 3. Check the box marked "Developer Mode"
 4. Click the "Load unpacked extension" button and select the folder you just unzipped.
 5. An icon should appear in the Chrome Toolbar.
-
-This extension probably violates some terms of service with Facebook and so
-I will not be submitting it to the Chrome Web Store.
 
 ## License
 MIT:
