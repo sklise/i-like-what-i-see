@@ -1,5 +1,7 @@
 # I Like What I See
 
+![alt text](http://www.memelinks.com/like-all-the-posts.jpg "Like!")
+
 _I Like What I See_ is a Chrome extension to automatically click all "Like"
 links on Facebook. When you visit Facebook, click the thumbs up
 in the extension bar and start scrolling and liking. Liking and scrolling.
